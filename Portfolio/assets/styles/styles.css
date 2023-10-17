@@ -1,0 +1,396 @@
+* {
+  box-sizing: border-box;
+}
+
+.container-info {
+  width: 700px;
+}
+
+#taille-logo {
+  width: 100px;
+  height: 100px;
+}
+
+.menu-button {
+  display: none;
+  /* Masquer le bouton sur les écrans plus larges */
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  position: relative;
+}
+
+nav {
+  position: relative;
+  font-size: large;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: bold;
+}
+
+.position-hover li a {
+  display: inline;
+  position: relative;
+  color: orangered;
+}
+
+.taille {
+  width: 50px;
+  height: 50px;
+}
+
+.position-hover .only-black, .position-hover .only-black:visited{
+  color: orangered;
+}
+
+.position-hover a:hover {
+  color: orangered;
+}
+.position-hover .only-black:hover:visited {
+  color: orangered;
+}
+
+.position-hover a::before {
+  content: "";
+  width: 0;
+  height: 2px;
+  /* Hauteur du trait */
+  background-color: orangered;
+  /* Couleur du trait */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: 0.5s ease;
+  /* Transition de largeur */
+}
+
+/* Au survol du lien, élargissez le trait */
+.position-hover a:hover::before {
+  width: 100%;
+  /* Largeur maximale du trait */
+}
+
+.color {
+  color: orangered;
+}
+
+.size {
+  font-size: 60px;
+}
+.img-size {
+  width: 400px;
+  height: 400px;
+}
+section {
+  height: 700px;
+}
+
+h2 {
+  font-family: "Gambetta", serif;
+  letter-spacing: -1px;
+  transition: 700ms ease;
+  font-variation-settings: "wght" 311;
+  margin-bottom: 0.8rem;
+  color: PaleGoldenRod;
+  outline: none;
+  font-size: 35px;
+  color: orangered;
+  text-align: center;
+  white-space: nowrap;
+  font-weight: bold;
+  font-family: "Chakra Petch", sans-serif;
+}
+
+h2:hover {
+  font-variation-settings: "wght" 582;
+  letter-spacing: 2px;
+}
+
+.heartbeat {
+  animation: heartbeat 2s infinite;
+  /* Applique l'animation heartbeat */
+  display: inline-block;
+  /* Permet de maintenir le contenu centré */
+  color: orangered;
+  font-weight: bold;
+  font-family: "Chakra Petch", sans-serif;
+}
+
+.border-text {
+  margin-top: 2em;
+  border-radius: 5px;
+  box-shadow: orangered 0px 20px 30px -10px;
+}
+
+.border-text p {
+  text-align: justify;
+}
+
+.debut {
+  color: orangered;
+  font-size: 1.5em;
+}
+
+.carous {
+  border-radius: 20px;
+  border: 3px solid orangered;
+}
+
+.img-container img {
+  width: 400px;
+  height: 400px;
+}
+
+p,
+h3,
+h4 {
+  font-family: "Lekton", sans-serif;
+}
+
+.size-text {
+  text-align: justify;
+}
+.title {
+  font-family: "Chakra Petch", sans-serif;
+  color: rgb(255, 99, 43);
+  text-transform: uppercase;
+  font-size: 20px;
+}
+h5 {
+  font-family: "Chakra Petch", sans-serif;
+  color: rgb(255, 99, 43);
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.border-left {
+  border-right: 1px solid orangered;
+}
+
+.title-footer h2 {
+  animation: title-footer 1s infinite alternate;
+}
+
+.custom-toggler.navbar-toggler {
+  border-color: orangered;
+  color: orangered;
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='orangered' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.background-title {
+  border: 2px solid orangered;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  font-weight: bold;
+}
+
+.container-circle {
+  position: relative;
+}
+.circle-container {
+  flex-basis: calc(
+    50% - 10px
+  ); /* Pour obtenir 2 colonnes avec un espace entre */
+  margin: 5px; /* Espace entre les cercles */
+  text-align: center;
+}
+.circle-progress {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  background-color: pink;
+  border-radius: 50%;
+  background: conic-gradient(orangered 3.6deg, white 0deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle-progress::before {
+  content: "";
+  position: absolute;
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  background-color: #f8f9fa;
+}
+
+.progress-value {
+  position: relative;
+  font-size: 15px;
+  font-weight: bold;
+  color: orangered;
+}
+span {
+  position: relative;
+  font-family: "Lekton";
+  font-weight: bold;
+}
+.reveal-loaded .reveal [class*="reveal-"] {
+  opacity: 0!important;
+  animation: none!important;
+  transition: 0s!important;
+}
+
+.reveal-loaded [class*="reveal-"]{
+  animation: revealAnimation 1s cubic-bezier(.5, 0, 0, 1) both;
+}
+
+.reveal-loaded .reveal-2 {
+  animation-delay: .1s;
+}
+
+.reveal-loaded .reveal-3 {
+  animation-delay: .3s;
+}
+
+.reveal-loaded .reveal-4 {
+  animation-delay: .5s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal-loaded  [class*="reveal-"] {
+    animation: none!important;
+  }
+}
+
+@keyframes revealAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@keyframes title-footer {
+  from {
+    transform: translateX(-40px);
+  }
+
+  to {
+    transform: translateX(20px);
+  }
+}
+
+@keyframes heartbeat {
+  0% {
+    transform: scale(1);
+  }
+
+  25% {
+    transform: scale(1.1);
+  }
+
+  50% {
+    transform: scale(1);
+  }
+
+  75% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  section {
+    height: auto;
+  }
+  ul {
+    padding: 0 0 0 20px !important;
+  }
+  .size {
+    font-size: 40px;
+    margin: 0;
+    padding: 0;
+    white-space: normal;
+  }
+
+  .border-left {
+    border: none;
+  }
+  em {
+    font-size: 16px;
+  }
+  .container-info {
+    margin: 0 auto !important;
+    padding: 0 !important;
+  }
+  .position-hover a::before {
+    display: none;
+  }
+  .content {
+    padding: 0 10px !important;
+  }
+
+  .img-size {
+    display: none;
+  }
+  p {
+    text-align: justify !important;
+    font-size: 14px;
+  }
+
+  .img-container {
+    display: none;
+  }
+  .size {
+    white-space: wrap;
+    font-size: 38px;
+  }
+  .title {
+    font-size: 17px;
+  }
+
+  h3 {
+    font-size: 17px;
+    margin: 0 !important;
+  }
+  .title-footer h2 {
+    animation: none;
+    text-align: center;
+  }
+  #fourth-section {
+    height: 500px !important;
+  }
+  .footer {
+    padding: 0 !important;
+  }
+
+  h4 {
+    text-align: center;
+  }
+
+  .container-info {
+    width: 302px;
+    margin: 0 25px 0 0 !important;
+  }
+  .padding-remove {
+    padding: 0 !important;
+  }
+  h2:hover {
+    display: none;
+  }
+  .remove-margin {
+    margin: 0 !important;
+  }
+  .circle-progress{
+    width: 100px;
+    height: 100px;
+  }
+  .circle-progress::before{
+    width: 70px;
+    height: 70px;
+  }
+  .queries-size{
+    padding: 20px 0 0 0;
+  }
+}

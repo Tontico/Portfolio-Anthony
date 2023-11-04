@@ -1,4 +1,4 @@
-const threshold = .1
+const threshold = .3;
 const options = {
   root: null,
   rootMargin: '0px',

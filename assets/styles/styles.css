@@ -148,7 +148,7 @@ h4 {
 
 .size-text {
   box-shadow: rgba(255, 99, 43, 0.27) 0px 0px 0.25em, rgba(255, 99, 43, 0.05) 0px 0.25em 1em;
-  border-radius: 10px;
+  border-radius: 40px 20px;
 }
 .title {
   font-family: "Chakra Petch", sans-serif;

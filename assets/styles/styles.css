@@ -76,7 +76,7 @@ nav {
 }
 
 .size {
-  font-size: 60px;
+  font-size: 70px;
 }
 .img-size {
   width: 400px;
@@ -287,27 +287,6 @@ span {
   }
 }
 
-@keyframes heartbeat {
-  0% {
-    transform: scale(1);
-  }
-
-  25% {
-    transform: scale(1.1);
-  }
-
-  50% {
-    transform: scale(1);
-  }
-
-  75% {
-    transform: scale(1.1);
-  }
-
-  100% {
-    transform: scale(1);
-  }
-}
 
 @media screen and (max-width: 1024px) {
   section {
